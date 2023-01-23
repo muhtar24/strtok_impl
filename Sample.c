@@ -12,7 +12,7 @@ int main(void)
 	char s[] = ",,,,,Ali,,,,,,,Veli,,,,,,,Selami,,,,,";
 	char *pstr;
 
-	for (pstr = strtok(s, ", "); pstr != NULL; pstr = strtok(NULL, ", ")) {
+	for (pstr = mystrtok(s, ", "); pstr != NULL; pstr = mystrtok(NULL, ", ")) {
 		puts(pstr);
 	}
 
